@@ -17,8 +17,12 @@ gem 'activerecord-jdbcsqlite3-adapter', :platform => :jruby
 gem 'appraisal', '= 1.0.2'
 gem 'rails', '3.0.20'
 gem 'hitimes', '< 1.2.2'
+gem 'mixlib-shellout', '<= 2.0.0'
+gem 'net-ssh', '<= 3.1.1'
+gem 'public_suffix', '<= 2.0.5'
 gem 'rake', '< 11'
 gem 'rspec-rails', '>= 2.14.0'
+gem 'simplecov-html', '<= 0.10.2'
 
 if RUBY_VERSION < '2.2.2'
   gem 'sidekiq', '~> 2.13.0'
@@ -42,7 +46,8 @@ gem 'simplecov'
 
 gem 'sinatra'
 gem 'delayed_job', :require => false
-gem 'redis'
+gem 'redis', '<= 3.3.5'
+gem 'redis-namespace', '<= 1.5.0'
 gem 'database_cleaner', '~> 1.0.0'
 gem 'genspec', '>= 0.2.8'
 gem 'girl_friday', '>= 0.11.1'
